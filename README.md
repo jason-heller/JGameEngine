@@ -1,4 +1,4 @@
-<h2>GameEngine2</h2>
+<h2>JGameEngine</h2>
 GameEngine2 is a 3D game engine written in Java and LWJGL, current still in-progress.
 
 <b>Note:</b> Requires Java.
