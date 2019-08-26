@@ -1,0 +1,13 @@
+/***********************
+      START.SCR
+************************
+
+This runs at the start of the game, during the engine's initialization
+Every line in here will be sent to the game's console as a command
+
+*/
+
+debug
+fullbright
+net_log_packets
+volume 0

@@ -1,0 +1,34 @@
+How to use the scripting language:
+
+script_start			// Tells the script where to start, and also adds it to the array of active scripts
+script_tick				// Tells the script where to start running the code when a tick occurs
+script_end				// Ends the script and removes it from the array of active scripts
+return					// Ends the script without removing it from the array of active scripts
+
+goto <int lineNum>		// Jumps the line's current reading point to the specified line number
+goto <string label>		// Same as before, but jumps to a label defined by the scripter
+@somelabel				// Defines a label. If called by goto, the current reading point will jump to this point
+
+if X>=Y {				// \
+						// | If block. Works as excepted. Supports ==, >=, <=, !=, >, <
+}						// /
+
+$x=0					// Defines a variable "x" to 0.0, all variables are floats
+$x+1.5					// Basic arithmatic is supportes. This is equivalent to x += 1.5f; in java
+							// The supported operators are:
+$x+0.1						// + (addition)
+$x-1.5						// - (subtraction),
+$x*1.5						// * (multiplication)
+$x/1.5						// / (division)
+$x%1.5						// % (modulus)
+
+$x=fps					// There are also special values that variables can be set to. These are read only
+							// All usable values are:
+							// fps 			(framerate)
+							// fov 			(field of view)
+							// delta_time	(delta time of tickrate)
+							// gravity		(gravity)
+							
+debug true				// \
+log asdfg				// / Any console commands written in the script will be sent to the console and executed
+						

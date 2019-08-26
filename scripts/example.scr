@@ -1,0 +1,23 @@
+script_start
+$x = 0
+debug true
+fullbright true
+net_log_packets true
+
+return
+
+script_tick
+@tick
+$x + 10
+log x is $x
+if $x>=210 {
+	goto end
+}
+goto tick
+
+@end
+$x / 2
+log Half of X is $x
+$x = 420
+log X is now $x
+script_end
